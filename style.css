@@ -1,0 +1,92 @@
+/* Body Styles */
+html, body { height: 100%}
+
+body {
+    margin: 0 20px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FF99C8;;
+    display: flex; /* use flexbox for layout */
+    flex-direction: column; /* stack children vertically */
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 20px rgba(0,0,0,0.17);
+    display: inline-block;
+    padding: 30px;
+    text-align: left;
+    
+    width: 600px;
+    margin: auto;
+  }
+/* Header Styles */
+h1 {
+    font-size: 48px;
+    text-align: left;
+    color: #333333;
+}
+
+
+/* Movie Styles */
+.content {
+    margin-top: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; /* Display cards in a row */
+  }
+
+.card {
+    margin-top: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;   /* add position relative to the .content div */
+
+}
+
+
+.card img {
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out; 
+
+}
+.card:hover img {
+  opacity: 0.3; /* decrease opacity on hover */
+}
+
+.card .details {
+    display: none; /* hide by default */
+    position: absolute; /* set position to absolute */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+  }
+
+  .card:hover .details {
+    display: block;
+ }
+ 
+  
+
+
+
+
+
